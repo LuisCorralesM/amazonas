@@ -1,0 +1,96 @@
+/* Fuentes 
+1: font-family: 'Roboto', sans-serif; 
+2: font-family: 'Indie Flower', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* Variables colores */
+
+:root {
+    --color-1: #B4CFEA;
+    --color-2: #A0AFC5;
+    --color-3: #1916A5;
+    --color-4: #110C66;
+    --color-5: #6F8DAC;
+    --color-6: #4D56B9;
+    --color-7: #AA7278;
+}
+
+/* MOBILE FIRST */
+
+
+/* Desktop */
+
+
+.contenedor-filtros{
+    background-color: #444;
+}
+
+.lista-filtros{
+    display: flex;
+    color: #fff;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.contenedor-categorias{
+    background-color: #eee;
+    margin-top: -20px;
+}
+
+.lista-categorias{
+    display: flex;
+    color: #000;
+    list-style: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.item-categoria{
+    padding: 0 20px;
+}
+
+.contenedor-card-producto{
+    display: flex;
+}
+
+.contenedor-imagenes{
+    display: flex;
+}
+
+.imagenes-pequeñas{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.imagenes-pequeñas img{
+    margin: 20px 0;
+}
+
+.descripcion{
+    padding: 20px 50px;
+}
+
+.nombre-producto{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.referencia-producto{
+    color: #4cadfd;
+}
+
+.descripcion-producto-titulo{
+    color: #000;
+    font-weight: 900;
+}
+
+.precio-producto{
+    font-weight: 900;
+    color: #f00;
+}
