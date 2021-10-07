@@ -2,6 +2,7 @@ import { typesProducto } from "../types/types";
 import { db } from "../firebase/firebaseConfig";
 import { addDoc,collection,deleteDoc,getDocs, query,where,doc } from "@firebase/firestore";
 
+
 //Eliminar
 export const deleteProducto = (referencia) =>{
     return async(dispatch) => {
@@ -57,13 +58,13 @@ export const registerProductoSincrono = (producto) => {
 export const listProducto = () => {
     return async (dispatch) => {
         const querySnapshot = await getDocs(collection(db, "productos"));
-        const producto = [];
+        const productos = [];
         querySnapshot.forEach((doc) => {
-            producto.push({
+            productos.push({
                 ...doc.data()
             })
         });
-        dispatch(list(producto));
+        dispatch(list(productos));
     }
 }
 

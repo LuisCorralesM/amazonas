@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import '../style/styleComponents/tienda.css'
+import { useDispatch } from 'react-redux';
+import {listProducto} from '../actions/actionProducto'
 
 import { useSelector } from 'react-redux';
 
@@ -7,6 +9,8 @@ const Tienda = () => {
 
     const { Productos } = useSelector(store => store.Productos);
 
+    const dispatch = useDispatch()
+    dispatch(listProducto())
 
     const [imagen, setImagen] = useState('')
     const handleImg = (imag)=>{
